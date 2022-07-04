@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 import BuyTicket from './components/BuyTicket';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
+import DashApp from './components/dashboard/DashApp';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/buy-ticket" element={<BuyTicket />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/dashboard/*" element={<DashApp />} />
+       
 
 
 

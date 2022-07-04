@@ -32,9 +32,9 @@ function Header() {
             <ul className="contact-list-one">
               <li><i className="nav-toggler flaticon-location" /> 203 Madison Ave, NY, USA <strong>Address</strong></li>
               <li><i className="nav-toggler flaticon-alarm-clock-1" />Monday - Friday 9am - 6pm <strong>Timeing</strong></li>
-              <li><i className="nav-toggler flaticon-email-1" /> <Link to="mailto:subhanuddinkhan@gmail.com">subhanuddinkhan@gmail.com</Link> <strong>Mail to us</strong></li>
+              <li><i className="nav-toggler flaticon-menu-2" /> <Link to="/dashboard">Event Dashboard <strong>Dashboard</strong></Link> </li>
             </ul>
-            <button className="nav-toggler"><i className="flaticon flaticon-menu-2" /></button>
+            {/* <button className="nav-toggler"><i className="flaticon flaticon-menu-2" /></button> */}
 
           </div>
         </div>
@@ -90,7 +90,7 @@ function Header() {
   <div className="auto-container">            
     <div className="main-box">
       <div className="logo-box">
-        <div className="logo"><a href="index.html"><img src={process.env.PUBLIC_URL + "assets/images/logo.png" }/></a></div>
+        <div className="logo"><a href="/"><img src={process.env.PUBLIC_URL + "assets/images/logo.png" }/></a></div>
         <div className="upper-right">
           <div className="search-box">
             <button className="search-btn mobile-search-btn"><i className="flaticon-search-2" /></button>
@@ -139,15 +139,14 @@ function Header() {
       {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
       <nav className="menu-box">
         <div className="upper-box">
-          <div className="nav-logo"><Link to="index.html"><img src={process.env.PUBLIC_URL + "assets/images/logo.png"}/></Link></div>
+          <div className="nav-logo"><Link to="/"><img src={process.env.PUBLIC_URL + "assets/images/logo.png"}/></Link></div>
           <div className="close-btn"><i className="icon flaticon-close" /></div>
         </div>
         <ul className="navigation clearfix">{/*Keep This Empty / Menu will come through Javascript*/}</ul>
         <ul className="contact-list-one">
           <li><i className="flaticon-location" /> 203 Madison Ave, NY, USA <strong>Address</strong></li>
           <li><i className="flaticon-alarm-clock-1" />Monday - Friday 9am - 6pm <strong>Timeing</strong></li>
-          <li><i className="flaticon-email-1" /> <Link to="mailto:subhanuddinkhan@gmail.com">subhanuddinkhan
-          @gmail.com</Link> <strong>Mail to us</strong></li>
+          <li><i className="flaticon-email-1" /> <Link to="/dashboard">Dashboard</Link> <strong>Dashboard</strong></li>
         </ul>
         <ul className="social-links">
           <li><Link to="#"><span className="fab fa-facebook-f" /></Link></li>
@@ -160,7 +159,7 @@ function Header() {
     {/* Header Search */}
     <div className="search-popup">
       <button className="close-search"><i className="flaticon-close" /></button>
-      <form method="post" action="https://themecraze.net/html/volia/blog.html">
+      <form method="post" action="#">
         <div className="form-group">
           <input type="search" name="search-field" defaultValue placeholder="Search" required />
           <button type="submit"><i className="fa fa-search" /></button>
@@ -206,7 +205,7 @@ function Header() {
     <ul className="contact-list-one">
       <li><i className="flaticon-location" /> 203 Madison Ave, NY, USA <strong>Address</strong></li>
       <li><i className="flaticon-alarm-clock-1" />Monday - Friday 9am - 6pm <strong>Timeing</strong></li>
-      <li><i className="flaticon-email-1" /> <a href="mailto:subhanuddinkhan@gmail.com">subhanuddinkhan@gmail.com</a> <strong>Mail to us</strong></li>
+      <li><i className="flaticon-email-1" /> <Link to="/dashboard">Dashboard</Link> <strong>Mail to us</strong></li>
     </ul>
   </div>
 </section>
